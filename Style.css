@@ -1,0 +1,211 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    background-color: white;
+    color: #282b2f;
+}
+
+body {
+    background: rgb(174, 180, 186);
+    background: linear-gradient(88deg, rgb(50 121 31) 0%, rgb(6 69 85) 100%, rgb(0 255 230 / 92%) 35%);
+}
+header{
+    background-color: #49c70f8a;
+    color: #cddf2d;
+    text-align: center;
+}
+
+
+
+/* sections start  */
+
+main {
+    display: flex;
+    align-items: start;
+    gap: 0px;
+    overflow-x: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.column {
+  font-size: larger;
+    min-height: 150px;
+    min-width: 300px;
+    border-radius: 15px;
+    background-color:#104314;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 10px #666;
+    position: relative;
+}
+
+.column>h6 {
+  text-decoration: overline;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    margin-inline: 0px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #397b37;
+    color: #cddf2d;
+    font-family: fangsong;
+    font-size: xx-large;
+}
+
+.column>h6>i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    padding: 5px 5px 5px 8px;
+    border-radius: 5px;
+}
+
+.column>h6>i:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.column>p {
+    min-height: 48px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px #28771d;
+    margin-inline: 15px;
+    border-radius: 10px;
+    padding: 10px 8px 8px 8px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    MARGIN: 11PX
+}
+
+.column>p:hover {
+    cursor: pointer;
+}
+
+.column>p>i {
+    display: none;
+    transition: 0.4s;
+    height: 30px;
+    width: 35px;
+    padding: 6px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.column>p>i:hover {
+    background-color: #ccc;
+}
+
+.column>p:hover>i {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+
+    color: #000;
+}
+
+.column>form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.column>form>.addTask {
+    width: 90%;
+    padding: 16px;
+    outline: none;
+    margin-top: 15px;
+    border-radius: 30px
+}
+
+.column>form>.addTask::placeholder {
+    font-size: 14px;
+}
+
+.column>form>.addTask:focus {
+    border: 2px solid rgb(124, 124, 134);
+}
+
+.column>form>.addTask1 {
+    border: 2px solid rgb(0, 0, 0) !important;
+    width: 90%;
+    padding: 5px;
+    outline: none;
+    margin-top: 15px;
+}
+
+.column>form>.addTask1::placeholder {
+    font-size: 14px;
+}
+
+#addCard {
+    height: 35px;
+    min-width: 100px;
+    margin: 15px 0px 0px 15px !important;
+    background-color: #21b70af0;
+    color: #cddf2d;
+    outline: none;
+    border: #157391;
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+#addCard:hover {
+    background-color: #3e922d;
+    color: rgb(0, 0, 0);
+    border: 1px solid #093800;
+}
+
+#addCard:active {
+    border: 2px solid #fff;
+ 
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    footer>h5>a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+  
+    .nav2-table {
+        height: 25px;
+        width: 60px;
+        font-size: 0.2rem;
+    }
+    .nav2-left>h6 {
+        font-size: 0.8rem !important;
+    }
+    .nav2-left>h5 {
+        font-size: 1rem !important;
+    }
+    footer>h5>a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .nav2-left>h6 {
+        font-size: 0.7rem !important;
+    }
+    .nav2-table {
+        height: 25px;
+        width: 30px;
+        font-size: 2px !important;
+    }
+}
